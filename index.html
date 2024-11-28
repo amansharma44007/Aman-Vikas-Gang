@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Tanishq Property</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+   <link href="https://fonts.googleapis.com/css2?family=Bitter&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="header headerFontFamily">
+      <div class="logo">
+        <img src="images/logo1.png" alt="Logo" />
+      </div>
+      <div class="header-div">
+      <button class="home-button home-margin" onclick="toggleNav()">
+        <img src="images/apartment.png" alt="Home Icon" class="icon" />Home
+      </button>
+      <button class="home-button" onclick="navigateToPage()">
+        <img src="images/contact.png" alt="Home Icon" class="icon" />Connect With Us
+      </button>
+    </div>
+    </header>
+
+
+    <!-- Horizontal Navigation Menu Overlay -->
+    <div id="navMenu" class="horizontal-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="/Aman sharma project/Property-main/knowMorePage/contact.html">Contact</a>
+    </div>
+
+    <div class="slideshow-container">
+      <!-- Slide 1 -->
+      <div class="mySlides w3-animate-top">
+        <img src="images/slide1.png" style="width: 100%" />
+        <div class="overlay-content">
+          <h2 class="headerFontFamily" style="font-weight: 600;">Welcome to Tanishq Property</h2>
+          <button class="slide-button">Learn More</button>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="mySlides w3-animate-bottom">
+        <img src="images/slide2.jpeg" style="width: 100%" />
+        <div class="overlay-content">
+          <h2 class="headerFontFamily" style="font-weight: 600;">Discover Your Dream Home</h2>
+          <button class="slide-button headerFontFamily">Explore</button>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="mySlides w3-animate-top">
+        <img src="images/slide3.jfif" style="width: 100%" />
+        <div class="overlay-content">
+          <h2 class="headerFontFamily" style="font-weight: 600;">Find the Perfect Place for You</h2>
+          <button class="slide-button headerFontFamily">Get Started</button>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="mySlides w3-animate-bottom">
+        <img src="images/slide4.jpg" style="width: 100%" />
+        <div class="overlay-content">
+          <h2 class="headerFontFamily" style="font-weight: 600;">Trusted by Many, Loved by All</h2>
+          <button class="slide-button headerFontFamily">Join Us</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="services-section">
+      <!-- <h2 class="section-title headerFontFamily headingFonts">WHAT WE ARE DOING</h2> -->
+        <!-- <h2 class="section-title headerFontFamily headingFonts">WHAT WE ARE<span class="headerFontFamily" style="color:#eceff3;"> DOING</span></h2> -->
+        <h2 class="section-title headerFontFamily headingFonts">OUR<span class="headerFontFamily" style="color:#eceff3;"> SERVICES</span></h2>
+      <!-- <div class="section-divider" style="margin-bottom: 50px;">
+        <span class="line"></span>
+        <span class="dot">•</span>
+        <span class="line"></span>
+      </div> -->
+      <!-- Divider with line and dot -->
+
+      <div class="services-container">
+        <div class="service-box animate-left">
+          <h3 class="headerFontFamily" style="font-size: 18px; letter-spacing: 3px; text-transform: uppercase;">
+            REAL ESTATE CONSULTING</h3>
+          <p>
+            For when you need it, Chaahat Homes will review, analyze, recommend,
+            For when you need it, Chaahat Homes will review, analyze, recommend,
+            For when you need it, Chaahat Homes will review, analyze, recommend,
+            and provide solutions...
+          </p>
+          <img src="images/service1.jpg" alt="Real Estate Consulting" />
+        </div>
+
+        <div class="service-box animate-left">
+          <h3 class="headerFontFamily"  style="font-size: 18px; letter-spacing: 3px; text-transform: uppercase;">NRI SERVICE</h3>
+          <p>
+            In our bid to cater to the demands coming from the NRI community,
+            For when you need it, Chaahat Homes will review, analyze, recommend,
+            For when you need it, Chaahat Homes will review, analyze, recommend,
+            Chaahat Homes...
+          </p>
+          <img src="images/service2.jpg" alt="NRI Service" />
+        </div>
+
+        <div class="service-box animate-left">
+          <h3 class="headerFontFamily"  style="font-size: 18px; letter-spacing: 3px; text-transform: uppercase;">LEGAL CONSULTING</h3>
+          <p>
+            Chaahat Homes assists you in getting your dream home through home
+            For when you need it, Chaahat Homes will review, analyze, recommend,
+            For when you need it, Chaahat Homes will review, analyze, recommend,
+            loan services...
+          </p>
+          <img src="images/service3.jpg" alt="Legal Consulting" />
+        </div>
+      </div>
+    
+
+    
+    </section>
+ 
+    <section class="properties-section">
+      <!-- <h2 class="section-title headerFontFamily headingFonts">TOP PROPERTIES IN DELHI NCR</h2> -->
+       <h2 class="section-title headerFontFamily headingFonts">TOP <span class="headerFontFamily" style="color:#eceff3;">PROPERTIES IN DELHI NCR</span></h2>
+      <!-- <div class="section-divider">
+        <span class="line"></span>
+        <span class="dot">•</span>
+        <span class="line"></span>
+      </div> -->
+      <!-- Divider with line and dot -->
+
+      <div class="property-tabs">
+        <button class="tab-button headerFontFamily" id="featured" style="font-size: 13px; line-height: 1.8em;  letter-spacing: 1.5px;">Featured</button>
+        <button class="tab-button headerFontFamily" id="residential" style="font-size: 13px; line-height: 1.8em;  letter-spacing: 1.5px;">Residential</button>
+        <button class="tab-button headerFontFamily" id="commercial" style="font-size: 13px; line-height: 1.8em;  letter-spacing: 1.5px;">Commercial</button>
+      </div>
+      <div class="card-container" id="cardContainer"></div>
+    </section>
+
+     <!-- Builder Partner Section -->
+ <section class="builder-partners-section">
+      <h2 class="section-title headerFontFamily headingFonts">Builder <span class="headerFontFamily">Partner</span></h2>
+      <!-- <div class="section-divider">
+        <span class="line"></span>
+        <span class="dot">•</span>
+        <span class="line"></span>
+      </div> -->
+      <!-- Divider with line and dot -->
+      <div class="logos-container">
+        <div class="logo-item">
+          <img src="images/logo1.png" alt="Central Park Logo" />
+        </div>
+        <div class="logo-item">
+          <img src="images/logo1.png" alt="DLF Logo" />
+        </div>
+        <div class="logo-item">
+          <img src="images/logo1.png" alt="Elan Logo" />
+        </div>
+        <div class="logo-item">
+          <img src="images/logo1.png" alt="Trump Towers Logo" />
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials-section">
+      <h2 class="section-title headerFontFamily headingFonts">Our Happy Clients<span class="headerFontFamily" style="color:#eceff3; "> Say It Best! </span></h2>
+      <!-- <div class="section-divider">
+        <span class="line"></span>
+        <span class="dot">•</span>
+        <span class="line"></span>
+      </div> -->
+      <!--     
+        <div class="testimonials">
+            <div class="testimonial active" data-index="0">
+                <p>"This product changed my life! Highly recommend to everyone."</p>
+                <span class="customer-name">- Jane Doe</span>
+            </div>
+            <div class="testimonial" data-index="1">
+                <p>"Excellent service and quality. Couldn't be happier!"</p>
+                <span class="customer-name">- John Smith</span>
+            </div>
+        </div> -->
+
+      <div class="Cslider-container">
+        <div class="Cslider" id="Cslider">
+          <!-- Dummy Cards -->
+          <div class="Ccard">
+            <svg
+              class="quoteIcon"
+              fill="#000000"
+              style="background-color: yellow"
+              width="57px"
+              height="44px"
+              viewBox="-75 -50 700 700"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"
+              />
+            </svg>
+            <div class="customerSectionBox">
+              <div class="Cquote">
+                <p class="">
+                  Chaahat Homes is the perfect balance between competitiveness
+                  and listener. When you're making a big financial, personal and
+                  sometimes emotional decision, like buying a home you want
+                  someone who will be a good listener,a strong negotiator and
+                  who is respected his/her peers. Chaahat Homes meets all
+                  expectations.
+                </p>
+            </div>
+            <div class="customerName">ANJALI DOGRA</div>
+            </div>
+          </div>
+          
+           <div class="Ccard">
+            <svg
+              class="quoteIcon"
+              fill="#000000"
+              style="background-color: yellow"
+              width="57px"
+              height="44px"
+              viewBox="-75 -50 700 700"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"
+              />
+            </svg>
+            <div class="customerSectionBox">
+              <div class="Cquote">
+                <p class="">
+                 Hi team, I really appreciate the services that are provided by Chaahat Homes. The executives are really very kind and humble and always ready to help the client. I am so satisfied with their services that I am just free from all tensions and problems that come across while purchasing the dream home of mine.
+                </p>
+                <div class="customerName">NARENDRA YADAV</div>
+              </div>
+            </div>
+          </div>
+
+           <div class="Ccard">
+            <svg
+              class="quoteIcon"
+              fill="#000000"
+              style="background-color: yellow"
+              width="57px"
+              height="44px"
+              viewBox="-75 -50 700 700"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"
+              />
+            </svg>
+            <div class="customerSectionBox">
+              <div class="Cquote">
+                <p class="">
+                 It was quite a Very good experience with the Chaahat Homes. The sales person which I met is good he explained everything nicely. Also he is very responsive. overall its was very nice.
+                </p>
+                <div class="customerName">BIJENDER SHARMA</div>
+              </div>
+            </div>
+          </div>
+
+           <div class="Ccard">
+            <svg
+              class="quoteIcon"
+              fill="#000000"
+              style="background-color: yellow"
+              width="57px"
+              height="44px"
+              viewBox="-75 -50 700 700"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"
+              />
+            </svg>
+            <div class="customerSectionBox">
+              <div class="Cquote">
+                <p class="">
+                 I have met with excutive of chaahathomes. It was nice meeting with him and he gave very nice "Comparison and Growth of my Investment". Overall i am completely satisfy with the service of chaahat homes as well as the Executive. Thanks
+                </p>
+                <div class="customerName">UPENDER SINGH</div>
+              </div>
+            </div>
+          </div>
+
+           <div class="Ccard">
+            <svg
+              class="quoteIcon"
+              fill="#000000"
+              style="background-color: yellow"
+              width="57px"
+              height="44px"
+              viewBox="-75 -50 700 700"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"
+              />
+            </svg>
+            <div class="customerSectionBox">
+              <div class="Cquote">
+                <p class="">
+                  Chaahat Homes is the perfect balance between competitiveness
+                  and listener. When you're making a big financial, personal and
+                  sometimes emotional decision, like buying a home you want
+                  someone who will be a good listener,a strong negotiator and
+                  who is respected his/her peers. Chaahat Homes meets all
+                  expectations.
+                </p>
+                <div class="customerName">ANJALI DOGRA</div>
+              </div>
+            </div>
+          </div>
+
+           <div class="Ccard">
+            <svg
+              class="quoteIcon"
+              fill="#000000"
+              style="background-color: yellow"
+              width="57px"
+              height="44px"
+              viewBox="-75 -50 700 700"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"
+              />
+            </svg>
+            <div class="customerSectionBox">
+              <div class="Cquote">
+                <p class="">
+                  Chaahat Homes is the perfect balance between competitiveness
+                  and listener. When you're making a big financial, personal and
+                  sometimes emotional decision, like buying a home you want
+                  someone who will be a good listener,a strong negotiator and
+                  who is respected his/her peers. Chaahat Homes meets all
+                  expectations.
+                </p>
+                <div class="customerName">ANJALI DOGRA</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+    </section>
+
+   
+   
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-overlay">
+        <div class="footer-content">
+          <!-- Company Information -->
+          <div class="company-info">
+            <img
+              src="images/logo.png"
+              alt="Chaahat Homes Logo"
+              class="footer-logo"
+            />
+            <p class="footerText">
+              Chaahat homes was Established in 2007, Chaahat Homes Infratech Pvt
+              Ltd is the preferred real estate IPA (Indian Property Associate)
+              of Gurgaon for commercial and residential spaces with the perfect
+              investment opportunity and excellent service.
+            </p>
+          </div>
+
+          <!-- Divider -->
+          <div class="divider"></div>
+
+          <!-- Social Links -->
+          <div class="social-links">
+             <h3 class="headerFontFamily" style="color: #fff; font-size: 20px; letter-spacing: 3px; text-transform: uppercase;">Social Links</h3>
+            <ul>
+              <li><a href="#" target="_blank">Facebook</a></li>
+              <li><a href="#" target="_blank">Twitter</a></li>
+              <li><a href="#" target="_blank">Instagram</a></li>
+              <li><a href="#" target="_blank">LinkedIn</a></li>
+            </ul>
+          </div>
+
+          <!-- Divider -->
+          <div class="divider"></div>
+
+          <!-- Contact Information -->
+          <div class="contact-info">
+            <h3 class="headerFontFamily" style="color: #fff; font-size: 20px; letter-spacing: 3px; text-transform: uppercase;">Contact Us</h3>
+            <p>
+             <strong> Chaahat Homes Infratech Pvt. Ltd.</strong><br />
+              M3M TeePoint, South Block, 6th Floor, Sector 65<br />
+              Gurugram, Haryana 122002
+            </p>
+            <p class="contact-infoMarginPaddingB"><strong>Phone:</strong> +91-9810277378</p>
+            <p class="contact-infoMarginPaddingB"><strong>Email:</strong> chaahathomes@gmail.com</p>
+            <p class="contact-infoMarginPaddingB">
+              <strong>Web:</strong>
+              <a href="https://chaahathomesinfratech.com/" target="_blank"
+                >https://chaahathomesinfratech.com/</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Copyright Footer Section -->
+    <div class="copyright-footer">
+      <p>© Copyright 2022 - Chaahat Homes. ALL RIGHTS RESERVED.</p>
+      <p>
+        WEBSITE DESIGNED & DEVELOPMENT BY
+        <a href="https://www.gtftechnologies.com" target="_blank"
+          >GTF TECHNOLOGIES</a
+        >
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
