@@ -192,7 +192,7 @@ function createCard(property) {
   const a = document.createElement("a");
   //   button.classList.add("a");
   //a.href = "/Property-main/knowMorePage/knowMore.html";
-  a.href="/Aman sharma project/Property-main/knowMorePage/knowMore.html" 
+  a.href="/knowMorePage/knowMore.html" 
   a.target = "_black";
   a.textContent = "Know More";
 
@@ -284,5 +284,5 @@ document.getElementById("commercial").classList.add("active");
 
 // Navigate to Contact HTML
 function navigateToPage() {
-  window.location.href = "/Aman sharma project/Property-main/knowMorePage/contact.html"; // Replace with the URL of your page
+  window.location.href = "/knowMorePage/contact.html"; // Replace with the URL of your page
 }
