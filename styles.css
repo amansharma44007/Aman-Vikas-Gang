@@ -1024,7 +1024,7 @@ body {
   min-height: 250px;
 }
 .customerName {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat';
   position: absolute;
   /* top: 0; */
   left: 0;
@@ -1040,9 +1040,74 @@ body {
 }
 
 .Cquote {
- font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat';
   font-size: 15px;
   font-weight: 500;
   line-height: 1.6em;
   color: #ddd;
+}
+
+.about-us-section {
+  padding: 50px 20px;
+  background: url("images/about-us-img.PNG") no-repeat center center;
+  background-size: cover; /* Ensures the image covers the entire section */
+  text-align: center;
+}
+
+
+.about-us-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.about-text {
+  max-width: 600px;
+  font-family: 'Montserrat';
+  color: #333;
+  text-align: left;
+}
+
+.about-text .about-paragraph {
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  margin-bottom: 30px;
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.headingFonts {
+  font-weight: 700;
+}
+
+.schedule-visit-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #fff;
+  background-color: #0F0945;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.schedule-visit-btn:hover {
+  background-color: #fdc97d;
 }
