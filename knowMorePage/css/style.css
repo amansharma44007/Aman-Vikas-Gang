@@ -6,24 +6,38 @@
 
 @import "https://fonts.googleapis.com/css?family=Allura";
 
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@300&display=swap');
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css");
+
 html {
-  background: #000 !important;
+  background: #0F0945 !important;
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  /* font-family: "Open Sans", Arial, Helvetica, sans-serif; */
+  font-family: 'Montserrat', serif;
   font-size: 13px;
   font-weight: 400;
   color: #ddd;
   line-height: 1.8em;
   padding: 0;
-  background: #606060;
+  background: #120a5d;
 }
+
+.headingFontAndFamily{
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 32px !important;
+  line-height: 38px;
+  text-transform: uppercase;
+}
+
 
 body.de_light,
 .de_light {
-  color: #606060;
+  color: #120a5d;
 }
 
 .offer-img {
@@ -121,7 +135,7 @@ header {
   -ms-transition: height 0.3s;
   -o-transition: height 0.3s;
   transition: height 0.3s;
-  background: #18191b;
+  background: #120a5d ;
   border-bottom: solid 1px rgba(0, 0, 0, 0);
 }
 
@@ -159,11 +173,11 @@ header .info strong {
 }
 
 header.header-light .info {
-  color: #333;
+  color: #120a5d ;
 }
 
 header.header-light .info .social i {
-  color: #333;
+  color: #120a5d ;
 }
 
 header.transparent.header-light .info,
@@ -255,7 +269,7 @@ header.smaller:not(.header-bottom):not(.side-header) #mainmenu ul ul {
 
 header.smaller:not(.header-bottom):not(.side-header) {
   height: 77px;
-  background: #18191b;
+  background: #0F0945    ;
 }
 
 header.smaller.no-border:not(.header-bottom):not(.side-header) {
@@ -349,7 +363,8 @@ header.smaller:not(.header-bottom).header-light {
   margin: 0;
   float: none;
   text-align: center;
-  font-family: "Dosis";
+  /* font-family: "Dosis"; */
+  font-family: 'Montserrat';
   letter-spacing: 5px;
   font-size: 14px;
   padding: 0;
@@ -640,7 +655,7 @@ header.transparent.header-light #mainmenu a {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #000;
+  background-color: #0F0945   ;
   opacity: 0.5 !important;
   z-index: 1;
 }
@@ -1090,12 +1105,12 @@ header:not(.header-mobile) #mainmenu > li:hover ul.mega {
 }
 
 #content {
-  background: #18191b;
+  background: #0F0945    ;
 }
 
 section {
   padding: 40px 0;
-  background: #000;
+  background: #0F0945;
 }
 
 .de-navbar-left .container-fluid .container {
@@ -1129,7 +1144,10 @@ footer {
 
 .newDiv {
   background-size: cover;
-  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(0, 0, 0, 0.5); */
+  background: #120a5d ;
+  border: 2px solid #e4b075;
+  border-radius: 8px;
   padding: 30px;
   margin-bottom: 30px;
 }
@@ -1152,7 +1170,7 @@ footer a:visited {
 }
 
 footer.light {
-  color: #606060;
+  color: #120a5d;
   background: #fff;
 }
 
@@ -1161,7 +1179,7 @@ footer.light .subfooter {
 }
 
 footer.light a {
-  color: #606060 !important;
+  color: #120a5d !important;
   text-decoration: none;
 }
 
@@ -1170,7 +1188,7 @@ footer.light a {
 }
 
 .subfooter {
-  background: #0b0b0b;
+  background: #0F0945;
   padding: 30px 0 20px;
 }
 
@@ -1229,11 +1247,11 @@ header.side-header .social-icons-2 a:hover {
 }
 
 header.header-mobile {
-  background: #000000a6;
+  background: #0F0945   000a6;
 }
 
 header.NewColor {
-  background: #000;
+  background: #0F0945   ;
 }
 
 header.header-mobile.header-light {
@@ -2084,7 +2102,7 @@ a.btn-slider:after {
 a.btn-slider:hover {
   color: #222;
   background: #fff;
-  border-color: #000;
+  border-color: #0F0945   ;
   border: solid 2px #fff;
 }
 
@@ -2124,7 +2142,8 @@ a.btn-custom:hover {
 }
 
 .de_count h3 {
-  font-family: "Dosis", Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat';
+  /* font-family: "Dosis", Arial, Helvetica, sans-serif; */
   font-size: 35px;
 }
 
@@ -2249,7 +2268,7 @@ hr {
   padding: 4px 10px;
   border: none;
   background: #222;
-  color: #606060;
+  color: #120a5d;
   border-radius: 3px;
 }
 
@@ -2295,8 +2314,9 @@ h3,
 h4,
 h5,
 h6 {
-  color: #000;
-  font-family: "Dosis", Arial, Helvetica, sans-serif;
+  color: #0F0945   ;
+  /* font-family: "Dosis", Arial, Helvetica, sans-serif; */
+  font-family: 'Montserrat';
   font-weight: 400;
 }
 
@@ -2479,7 +2499,8 @@ h3.style-1 {
 }
 
 .typing-wrap {
-  font-family: "Dosis";
+  /* font-family: "Dosis"; */
+  font-family: 'Montserrat';
   font-size: 30px;
   margin: 0;
   line-height: 60px;
@@ -2920,7 +2941,7 @@ span.teaser {
 .de_light .box-icon.line.active,
 .de_light .box-icon.line:hover {
   background: rgba(0, 0, 0, 0.05);
-  border-color: #000;
+  border-color: #0F0945   ;
 }
 
 .box-icon.line a {
@@ -3385,7 +3406,7 @@ span.teaser {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
-  background: #000;
+  background: #0F0945   ;
   color: #fff;
 }
 
@@ -3447,7 +3468,7 @@ span.teaser {
 }
 
 footer.light .social-icons i {
-  color: #606060;
+  color: #120a5d;
 }
 
 .social-icons i:hover {
@@ -3506,7 +3527,8 @@ footer.light .social-icons i {
 .de_tab.tab_steps .de_nav li span {
   padding: 30px 0;
   color: #222;
-  font-family: "Dosis";
+  /* font-family: "Dosis"; */
+  font-family: 'Montserrat';
   font-size: 16px;
   border-radius: 120px;
   -moz-border-radius: 120px;
@@ -3525,7 +3547,7 @@ footer.light .social-icons i {
 }
 
 .de_tab.tab_steps .de_nav li span:hover {
-  background: #000;
+  background: #0F0945   ;
   border: none;
   color: #fff;
 }
@@ -3653,7 +3675,8 @@ footer.light .social-icons i {
   background: none;
   border: none;
   margin-top: 20px;
-  font-family: "Dosis";
+  /* font-family: "Dosis"; */
+  font-family: 'Montserrat';
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -3833,7 +3856,8 @@ footer.light .social-icons i {
   border: solid 1px rgba(255, 255, 255, 0.2);
   padding: 10px 20px;
   margin: 5px;
-  font-family: "Dosis";
+  /* font-family: "Dosis"; */
+  font-family: 'Montserrat';
   text-transform: uppercase;
   letter-spacing: 5px;
 }
@@ -4101,7 +4125,7 @@ a.btn-right {
   display: inline-block;
   padding: 10px 20px;
   font-style: normal;
-  background: #000;
+  background: #0F0945   ;
   position: absolute;
   left: 0;
   top: 0;
@@ -4142,7 +4166,7 @@ a.btn-right {
 
 .de_testi.s2 blockquote {
   background: #f6f6f6;
-  color: #606060;
+  color: #120a5d;
 }
 
 .de_testi.s2 blockquote:before {
@@ -4317,7 +4341,7 @@ object {
 }
 
 .card {
-  background: #18191b;
+  background: #0F0945    ;
   border: solid 1px #303030;
 }
 
@@ -4335,7 +4359,8 @@ object {
   -webkit-border-radius: 0;
   border: 0;
   padding: 10px 40px;
-  font-family: "Dosis", Arial, Helvetica, sans-serif;
+  /* font-family: "Dosis", Arial, Helvetica, sans-serif; */
+  font-family: 'Montserrat';
   letter-spacing: 1.5px;
 }
 
@@ -4803,7 +4828,7 @@ a:hover,
 }
 
 .de_light .project-info {
-  color: #606060;
+  color: #120a5d;
 }
 
 .project-info h2 {
@@ -5258,7 +5283,7 @@ label.custom-file-label {
 
   text-align: center;
 
-  color: #000;
+  color: #0F0945   ;
 
   font-size: 14px;
 }
@@ -5444,7 +5469,7 @@ label.custom-file-label {
 .inner_work_section .o_details li {
   background: var(--primary-color-1);
 
-  color: #000;
+  color: #0F0945   ;
 
   padding: 4px 15px;
 
@@ -5477,7 +5502,7 @@ label.custom-file-label {
 .job_modal .form_head {
   text-align: center;
 
-  color: #000;
+  color: #0F0945   ;
 
   font-weight: 700;
 
@@ -5531,7 +5556,7 @@ label.custom-file-label {
 
   font-size: 14px;
 
-  color: #000;
+  color: #0F0945   ;
 
   letter-spacing: 0.3px;
 }
@@ -5547,7 +5572,7 @@ label.custom-file-label {
 
   letter-spacing: 1px;
 
-  color: #000;
+  color: #0F0945   ;
 
   font-weight: 500;
 }
@@ -5619,7 +5644,7 @@ label.custom-file-label {
 .testimonial_section .testimonial_box .name {
   margin: 0;
 
-  color: #000;
+  color: #0F0945   ;
 
   font-weight: 600;
 
@@ -5675,7 +5700,7 @@ label.custom-file-label {
 }
 
 .widget_category li a {
-  color: #606060;
+  color: #120a5d;
 }
 
 .widget_recent_post li {
@@ -5714,7 +5739,7 @@ label.custom-file-label {
 }
 
 .de_light .widget_tags li a {
-  color: #606060;
+  color: #120a5d;
   border: solid 1px #ddd;
 }
 
@@ -5823,12 +5848,12 @@ img {
 }
 
 .bg-black {
-  background: #18191b;
+  background: #0F0945    ;
 }
 
 .de_light a,
 .de_light a:hover {
-  color: #606060;
+  color: #120a5d;
 }
 
 .wm {
@@ -6078,7 +6103,8 @@ img {
 }
 
 .teaser-text {
-  font-family: "Dosis";
+  /* font-family: "Dosis"; */
+  font-family: 'Montserrat';
   font-size: 14px;
   color: rgba(255, 255, 255, 0.5);
   line-height: normal;
@@ -6447,7 +6473,8 @@ section.no-padding {
 .text-slider {
   line-height: 60px;
   color: #fff;
-  font-family: "Dosis";
+  /* font-family: "Dosis"; */
+  font-family: 'Montserrat';
   font-size: 60px;
   text-transform: uppercase;
   font-weight: 300;
@@ -6786,7 +6813,7 @@ section.no-padding {
   height: 42px;
   padding: 10px;
   padding-right: 15px;
-  color: #000;
+  color: #0F0945   ;
   border-radius: 0 2px 2px 0;
   -moz-border-radius: 0 2px 2px 0;
   -webkit-border-radius: 0 2px 2px 0;
@@ -7434,14 +7461,14 @@ i.btn-action-hide {
 }
 
 .banner-form h4 {
-  color: #000;
+  color: #0F0945   ;
   font-weight: 600;
   letter-spacing: 0.5px;
   font-size: 30px;
 }
 
 .banner-form h1 {
-  color: #000;
+  color: #0F0945   ;
   font-weight: 700;
   font-size: 50px;
   text-align: left;
@@ -7677,7 +7704,7 @@ i.btn-action-hide {
 .enquiry-model .input-group-addon {
   padding: 10px;
   background: #ccc;
-  color: #000;
+  color: #0F0945   ;
   line-height: 20px;
 }
 
@@ -7702,7 +7729,8 @@ i.btn-action-hide {
 }
 
 #similarProject {
-  font-family: "Dosis", Arial, Helvetica, sans-serif;
+  /* font-family: "Dosis", Arial, Helvetica, sans-serif; */
+  font-family: 'Montserrat';
 }
 
 #propertyNew img {
@@ -7720,7 +7748,8 @@ i.btn-action-hide {
 .properties-detail p {
   margin-bottom: 0;
   font-size: 17px;
-  font-family: "Dosis", Arial, Helvetica, sans-serif;
+  /* font-family: "Dosis", Arial, Helvetica, sans-serif; */
+  font-family: 'Montserrat';
 }
 
 .form_inner .form-control {
@@ -7845,7 +7874,8 @@ i.btn-action-hide {
   margin-top: 50px;
   letter-spacing: 1px;
   display: inline-block;
-  font-family: "Dosis", Arial, Helvetica, sans-serif;
+  /* font-family: "Dosis", Arial, Helvetica, sans-serif; */
+  font-family: 'Montserrat';
   width: calc(100% - 110px);
 }
 
@@ -7909,7 +7939,7 @@ header.fixed {
   margin: 0;
   padding: 0;
   margin-top: 0;
-  background: #000;
+  background: #0F0945   ;
   padding: 5px 0;
 }
 
@@ -7929,12 +7959,12 @@ header.side-header,
   display: block;
   height: 60px;
   top: 0;
-  background: #000;
+  background: #0F0945   ;
 }
 
 header.side-header #mainmenu {
   position: absolute;
-  background: #000;
+  background: #0F0945   ;
   margin: 0;
   top: 60px;
   left: 0;
@@ -8088,7 +8118,7 @@ header.header-mobile.clone.smaller > div {
 .formbox2 {
   text-align: center;
   font-size: 24px;
-  color: #000;
+  color: #0F0945   ;
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -8151,7 +8181,7 @@ header.header-mobile.clone.smaller > div {
 }
 
 .banner-left h4 {
-  color: #000;
+  color: #0F0945   ;
   letter-spacing: 2px;
   font-size: 26px;
   padding: 5px 0;
@@ -8232,11 +8262,11 @@ header.header-mobile.clone.smaller > div {
   padding: 10px 0;
   font-weight: 600;
   letter-spacing: 2px;
-  color: #000;
+  color: #0F0945   ;
 }
 
 .form-box h4 a {
-  color: #000;
+  color: #0F0945   ;
 }
 
 .form-box h4 a:hover {
@@ -8267,7 +8297,7 @@ header.header-mobile.clone.smaller > div {
   padding: 10px;
   letter-spacing: 1px;
   font-weight: 600;
-  background: #000;
+  background: #0F0945   ;
   width: 100%;
 }
 
@@ -8298,7 +8328,7 @@ header.header-mobile.clone.smaller > div {
   border-radius: 0;
   border: 1px solid #ccc;
   outline: none;
-  color: #000;
+  color: #0F0945   ;
   height: 40px;
 }
 
@@ -8310,7 +8340,7 @@ header.header-mobile.clone.smaller > div {
 .form_inner input[type="submit"] {
   border-radius: 0;
   margin-top: 10px;
-  background: #000;
+  background: #0F0945   ;
   border: 0 solid;
   color: #fff;
 }
@@ -8327,7 +8357,7 @@ header.header-mobile.clone.smaller > div {
 }
 
 .form_no.whatsapp {
-  color: #000;
+  color: #0F0945   ;
   letter-spacing: 2px;
   font-weight: 600;
   font-weight: 600;
@@ -8337,14 +8367,14 @@ header.header-mobile.clone.smaller > div {
 }
 
 .form_inner p {
-  color: #000;
+  color: #0F0945   ;
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 2px;
 }
 
 .form_inner p a {
-  color: #000;
+  color: #0F0945   ;
 }
 
 .form_no.whatsapp span {
@@ -8372,7 +8402,7 @@ header.header-mobile.clone.smaller > div {
 }
 
 .location {
-  background-color: #000;
+  background-color: #0F0945;
   float: left;
   padding-bottom: 60px;
   width: 100%;
@@ -8412,7 +8442,7 @@ header.header-mobile.clone.smaller > div {
 
 .gallerySection,
 #similarProject {
-  background: #202020;
+  background: #0F0945;
 }
 
 .nomeansno {
@@ -8427,12 +8457,12 @@ header.header-mobile.clone.smaller > div {
 }
 
 .brochure {
-  background-image: url(../images/brochure.jpg);
+  /* background-image: url(/images/mumbai-skyline-skyscrapers-construction.jpg); */
   max-width: 48%;
 }
 
 .payment {
-  background-image: url(../images/payment.jpg);
+  /* background-image: url(../images/payment.jpg); */
   background-size: cover;
   max-width: 48%;
   margin-left: 2%;
@@ -8442,11 +8472,12 @@ header.header-mobile.clone.smaller > div {
   text-align: center;
   border: 1px solid #eceff3;
   padding: 60px 30px;
-  font-family: "Dosis", Arial, Helvetica, sans-serif;
+  /* font-family: "Dosis", Arial, Helvetica, sans-serif; */
+  font-family: 'Montserrat';
   text-transform: uppercase;
   font-size: 24px;
   float: right;
-  background: #000;
+  background: #0F0945   ;
   border: 0;
   text-align: right;
   margin: 15px 0;
@@ -8477,7 +8508,8 @@ h1.custom {
   margin: 0.5em 0;
   font-size: 36px;
   font-weight: 600;
-  font-family: "Dosis", Arial, Helvetica, sans-serif;
+  /* font-family: "Dosis", Arial, Helvetica, sans-serif; */
+  font-family: 'Montserrat';
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -8500,7 +8532,7 @@ h1.custom {
 }
 
 #floorPlan {
-  background-color: #18191b;
+  background-color: #0F0945    ;
 }
 
 .clearfix {
@@ -8522,7 +8554,7 @@ h1.custom {
 
   padding: 15px;
 
-  background: #00000073;
+  background: #0F0945   00073;
 }
 
 .search_form .form-group {
@@ -8730,8 +8762,9 @@ h1.custom {
 }
 
 .on_pop {
-  font-family: "Dosis", Arial, Helvetica, sans-serif;
-  background: #000000ab;
+  /* font-family: "Dosis", Arial, Helvetica, sans-serif; */
+  font-family: 'Montserrat';
+  background: #0F0945   000ab;
 }
 
 .on_pop .close {
@@ -8890,7 +8923,7 @@ h1.custom {
     background: #e8e8e8;
     font-weight: 600;
     letter-spacing: 2px;
-    color: #000;
+    color: #0F0945   ;
   }
 
   .tophead {
@@ -8928,7 +8961,7 @@ h1.custom {
   }
 
   .form_inner p {
-    color: #000;
+    color: #0F0945   ;
     font-size: 16px;
     line-height: 26px;
     margin-bottom: 2px;
@@ -8948,7 +8981,7 @@ h1.custom {
   .planbox a button {
     border: 0;
     padding: 4px 10px;
-    color: #000;
+    color: #0F0945   ;
     background: #fff;
     font-weight: 600;
     letter-spacing: 1px;
@@ -9792,7 +9825,7 @@ h1.custom {
     bottom: 0;
     z-index: 999;
     display: flex;
-    background: #000;
+    background: #0F0945   ;
   }
 
   .mobile-section .btn {
@@ -10128,7 +10161,8 @@ h1.custom {
   }
 
   .on_pop {
-    font-family: "Dosis", Arial, Helvetica, sans-serif;
+    /* font-family: "Dosis", Arial, Helvetica, sans-serif; */
+    font-family: 'Montserrat';
     padding-right: 0 !important;
   }
 
@@ -10258,3 +10292,40 @@ h1.custom {
 .post_article.color-black h3 {
   color: #333;
 }
+
+
+/* ---------------------button hover-------------- */
+ .btnEffect{
+            position: relative;
+            display: inline-flex;
+            padding: 10px 30px;
+            background:#363636;
+            color: white;
+            text-decoration: none;
+            letter-spacing: 1px;
+            overflow: hidden;
+    }
+    .btnEffect span{
+                position: relative;
+                z-index: 1;
+
+    }
+
+    .btnEffect::before{
+                content: '';
+                position: absolute;
+                top: var(--y);
+                left: var(--x);
+                transform: translate(-50%,-50%);
+                width: 0px;
+                height: 0px;
+                border-radius:50%;
+                background: red;
+                transition: width 0.8s,height 0.8s;
+
+    }
+    .btnEffect:hover::before{
+                width: 1200px;
+                height: 1200px;
+
+    }

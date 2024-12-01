@@ -84,7 +84,8 @@ section,#subheader {
 }
 
 #section-describe {
-    background: #202020
+    /* background: #202020 */
+    background: #0F0945
 }
 
 #section-download {
@@ -99,7 +100,7 @@ section,#subheader {
 }
 
 #section-about-us-2 {
-    background: #18191b;
+    background: #140d56;
     height: 100%
 }
 
@@ -168,7 +169,7 @@ section,#subheader {
 }
 
 #section-portfolio {
-    background: #222;
+    background: #0F0945;
     width: 100%;
     overflow: hidden
 }
@@ -206,11 +207,11 @@ section,#subheader {
 }
 
 #section-team {
-    background: #111
+    background: #0F0945
 }
 
 .de_light #section-team {
-    background: #f5f5f5
+    background: #e4b075
 }
 
 #hide-content {
