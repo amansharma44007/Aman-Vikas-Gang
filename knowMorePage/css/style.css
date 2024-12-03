@@ -34,6 +34,38 @@ body {
   text-transform: uppercase;
 }
 
+.horizontal-nav a {
+  display: flex;
+  position: relative; /* For positioning hover effects */
+  transition: color 0.3s ease; /* Smooth color transition */
+  font-family: 'Montserrat', serif;
+}
+/* Underline bar effect */
+.horizontal-nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  align-items: center;
+  height: 2px;
+  background-color: #fdc97d; /* Same color as dot */
+  transform: scaleX(0); /* Start hidden */
+  transition: transform 0.3s ease; /* Smooth expand */
+}
+
+.horizontal-nav a:hover::after {
+  transform: scaleX(1); 
+}
+
+.mainNav{
+  display: flex;
+  align-items: center;
+}
+
+.someInformation{
+  display: flex;
+}
 
 body.de_light,
 .de_light {
@@ -390,9 +422,9 @@ header.smaller:not(.header-bottom).header-light {
   opacity: 1;
 }
 
-.de-navbar-left header #mainmenu > li > a:after {
+/* .de-navbar-left header #mainmenu > li > a:after {
   content: none;
-}
+} */
 
 .de-navbar-left header nav {
   float: none !important;
@@ -550,17 +582,17 @@ header.smaller:not(.header-bottom).header-light {
   text-transform: uppercase;
 }
 
-#mainmenu ul {
+/* #mainmenu ul {
   float: right;
   margin: 0;
   padding: 0;
   height: 30px;
-}
+} */
 
 #mainmenu li {
-  margin: 0;
+  /* margin: 0;
   padding: 0;
-  float: left;
+  float: left; */
   display: inline;
   list-style: none;
   position: relative;
@@ -576,7 +608,8 @@ header.smaller:not(.header-bottom).header-light {
 
 #mainmenu a {
   display: inline-block;
-  padding: 22px 10px;
+  /* padding: 22px 10px; */
+  margin: 0px 10px;
   text-decoration: none;
   text-align: center;
   outline: none;
@@ -660,7 +693,7 @@ header.transparent.header-light #mainmenu a {
   z-index: 1;
 }
 
-#mainmenu li a:after {
+/* #mainmenu li a:after {
   float: right;
   position: relative;
   font-family: "FontAwesome";
@@ -669,16 +702,16 @@ header.transparent.header-light #mainmenu a {
   margin-left: 10px;
   margin-top: 0;
   color: #fab702;
-}
+} */
 
-#mainmenu li:last-child a:after {
+/* #mainmenu li:last-child a:after {
   display: none;
-}
+} */
 
-#mainmenu.dotted-separator li a:after {
+/* #mainmenu.dotted-separator li a:after {
   content: "\f111";
   font-size: 5px;
-}
+} */
 
 #mainmenu.line-separator li a:after {
   content: "/";
@@ -962,13 +995,16 @@ header:not(.header-mobile) #mainmenu > li:hover ul.mega {
   display: block;
   position: relative;
   float: right;
-  margin-top: 18px;
+  margin-top: 14px;
   background-color: var(--primary-color-1);
   color: #222;
-  width: 76px;
+  /* width: 76px; */
   font-weight: 700;
-  height: 36px;
-  padding: 6px;
+  height: 40px;
+  /* padding: 6px; */
+  border-radius: 4px;
+  padding: 10px 20px;
+  align-items: center;
   text-align: center;
   cursor: pointer;
 }
@@ -978,29 +1014,39 @@ header:not(.header-mobile) #mainmenu > li:hover ul.mega {
 }
 
 #menu-btn:before {
-  font-family: FontAwesome;
+  /* font-family: FontAwesome;
   content: "\f0c9";
-  color: #222;
+  color: #222; */
+  /* background: url(/images/apartment.png) top fixed; */
 }
 
 .header-light #menu-btn:before {
   color: #333;
 }
 
-#menu-btn.unclick:before {
+/* #menu-btn.unclick:before {
   content: "\f0c9";
 }
 
 #menu-btn.clicked:before {
   content: "\f00d";
+} */
+
+.menuBarStyle{
+  display: flex;
+  justify-content: space-between;
 }
 
 #menu-btn:hover {
-  background: #fff;
+  background-color: #fbaf5d;
 }
 
 #menu-btn:hover:before {
-  color: #222;
+  color: #000;
+}
+
+.menu-btn:hover{
+  background: #fbaf5d;
 }
 
 #nav-toggle {
@@ -1115,6 +1161,7 @@ section {
 
 .de-navbar-left .container-fluid .container {
   width: 100% !important;
+  background: url("../../images/card-img.jpg") no-repeat center center;
 }
 
 .de-navbar-left section {
@@ -1389,7 +1436,7 @@ header.smaller.header-scroll:not(.autoshow) {
 .blog-list .date-box .month,
 .blog-read .date-box .month {
   color: #fff;
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
   font-weight: 600;
   letter-spacing: 16px;
   padding: 7px 0;
@@ -1890,6 +1937,8 @@ address span a {
 
 .properties-detail {
   position: relative;
+  background: #0F0945;
+  
 }
 
 .my-patch {
@@ -2492,7 +2541,7 @@ h3.s2 {
 }
 
 h3.style-1 {
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
   letter-spacing: 0;
   text-transform: none;
   margin-bottom: 20px;
@@ -3907,7 +3956,7 @@ a.btn-right {
 }
 
 .expand h4 {
-  font-family: "Open Sans";
+  /* font-family: "Open Sans"; */
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
@@ -4768,6 +4817,14 @@ a:hover,
   top: 0;
   right: 0;
   margin-bottom: 20px;
+  
+}
+
+.similar-project{
+   background: url("../../images/card-img.jpg") no-repeat center center;
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image in the section */
+  background-attachment: fixed; /* Optional: creates a parallax effect */
 }
 
 .item h4 {
@@ -6308,7 +6365,7 @@ section.no-padding {
 }
 
 .teaser {
-  font-family: "Open Sans", Arial;
+  /* font-family: "Open Sans", Arial; */
   font-size: 15px;
   font-weight: 300;
 }
@@ -6786,7 +6843,7 @@ section.no-padding {
   top: 150px;
   left: 0;
   padding-left: 20px;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  /* font-family: "Open Sans", Arial, Helvetica, sans-serif; */
   font-size: 12px;
   margin-left: -120px;
   border-radius: 0 0 2px 0;
@@ -7917,7 +7974,7 @@ i.btn-action-hide {
   display: block;
   position: relative;
   float: right;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  /* font-family: "Open Sans", Arial, Helvetica, sans-serif; */
   font-weight: 600;
 }
 
@@ -7930,7 +7987,7 @@ header .info {
 }
 
 header.header-bg {
-  background: rgba(0, 0, 0, 1);
+  /* background: rgba(0, 0, 0, 1); */
 }
 
 header,
@@ -7943,9 +8000,9 @@ header.fixed {
   padding: 5px 0;
 }
 
-#mainmenu > li > a:hover {
+/* #mainmenu > li > a:hover {
   border-bottom: 3px solid var(--primary-color-1);
-}
+} */
 
 #de-sidebar {
   position: absolute !important;
@@ -8440,8 +8497,7 @@ header.header-mobile.clone.smaller > div {
   border-top: 0;
 }
 
-.gallerySection,
-#similarProject {
+.gallerySection {
   background: #0F0945;
 }
 
@@ -9043,9 +9099,9 @@ h1.custom {
 }
 
 @media only screen and (max-width: 1400px) {
-  #mainmenu a {
+  /* #mainmenu a {
     padding: 22px 6px;
-  }
+  } */
 
   .form-box {
     bottom: 0;
@@ -9099,6 +9155,11 @@ h1.custom {
   .w5 {
     width: 100%;
   }
+
+.someInformation{
+  display: block;
+}
+
 }
 
 @media screen and (max-width: 991px) {
@@ -10329,3 +10390,42 @@ h1.custom {
                 height: 1200px;
 
     }
+
+
+    /* home Menu button at the top */
+    
+.home-button {
+  background-color: #fdc97d;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s;
+  font-family: "Dosis", sans-serif;
+  outline: none; /* Added for cleaner focus */
+}
+
+.home-button .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.home-button:hover {
+  background-color: #fbaf5d;
+}
+
+
+@media (max-width: 768px) {
+  .header {
+    padding: 1% 4%;
+  }
+  .home-button {
+    margin-left: auto;
+    font-size: 14px; /* Slightly smaller font size for mobile */
+    padding: 8px 16px; /* Adjusted padding for smaller screens */
+  }
+}

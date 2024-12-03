@@ -21,11 +21,13 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 2%;
-  background-color: black;
+  background-color: #0F0945;
   height: 60px;
-  position: relative;
+  /* position: relative; */
   z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+  width: -webkit-fill-available;
+  position: fixed;
 }
 .home-margin{
   margin-right: 10px;
@@ -59,11 +61,12 @@ body {
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 13px;
   display: flex;
   align-items: center;
+  font-weight: 600;
   transition: background-color 0.3s;
-  font-family: "Dosis", sans-serif;
+  /* font-family: "Dosis", sans-serif; */
   outline: none; /* Added for cleaner focus */
 }
 
@@ -110,9 +113,10 @@ body {
 
 /* Transparent horizontal navigation bar */
 .horizontal-nav {
-  position: absolute;
-  top: 60px; /* Position below header */
-  width: 100%;
+  /* position: absolute; */
+  /* top: 60px;  */
+  /* width: 100%; */
+  /* display: flex; */
   padding: 10px 0;
   text-align: center;
   display: none; /* Hidden initially */
@@ -124,11 +128,17 @@ body {
 .horizontal-nav a {
   color: white;
   text-decoration: none;
-  font-size: 18px;
-  margin: 0 20px;
-  display: inline-block;
+  font-size: 11px;
+  margin: 0 10px;
+  display: flex;
   position: relative; /* For positioning hover effects */
   transition: color 0.3s ease; /* Smooth color transition */
+  font-family: 'Montserrat', serif;
+  letter-spacing: 3px;
+}
+.horizontal-nav li{
+  text-decoration: none;
+   list-style-type: none;
 }
 
 /* Hover effect: color change, dot, and underline */
@@ -138,7 +148,6 @@ body {
 
 /* Dot before text on hover */
 .horizontal-nav a::before {
-  content: "•"; /* Unicode dot character */
   color: #fdc97d; /* Dot color */
   opacity: 0; /* Hidden initially */
   font-size: 20px;
@@ -155,7 +164,7 @@ body {
 .horizontal-nav a::after {
   content: "";
   position: absolute;
-  bottom: -3px;
+  bottom: -5px;
   left: 0;
   width: 100%;
   height: 2px;
@@ -170,7 +179,7 @@ body {
 
 /* Show the navigation menu with the 'show' class */
 .horizontal-nav.show {
-  display: block;
+  display: flex;
   transform: translateY(0);
   visibility: visible;
   opacity: 1;
@@ -975,7 +984,7 @@ body {
 /* customer section slider */
 
 .Cslider-container {
-  width: 100%;
+  /* width: 100%; */
   /* max-width:1050px; */
   /* height: 300px; */
   overflow: hidden;
