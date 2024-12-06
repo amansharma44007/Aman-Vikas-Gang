@@ -10429,3 +10429,8 @@ h1.custom {
     padding: 8px 16px; /* Adjusted padding for smaller screens */
   }
 }
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
