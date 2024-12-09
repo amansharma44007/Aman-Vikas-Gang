@@ -93,7 +93,6 @@ function toggleNav() {
 
 
     function submit(){
-console.log("8888888888888888888888888")
         const btn = document.getElementById("ContactQuery");
         document
           .getElementById("formSubmit")
