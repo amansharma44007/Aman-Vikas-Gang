@@ -22,7 +22,7 @@ body {
   align-items: center;
   padding: 0 2%;
   background-color: #0F0945;
-  height: 60px;
+  height: 80px;
   /* position: relative; */
   z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
@@ -277,13 +277,13 @@ body {
   line-height: 1.6; */
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
   margin-bottom: 15px;
   overflow: hidden;
   max-width: 350px;
   font-size: 13px;
   line-height: 23px;
   color: #fff;
+  text-align: justify;
   /* width: 350px; */
 }
 
@@ -449,10 +449,11 @@ body {
   color: white;
   /* font-family: Arial, sans-serif; */
 }
-.footerText{
+.footerText {
   font-size: 13px;
   line-height: 1.8em;
   color: #ccc;
+  text-align: justify; /* Aligns text perfectly on both sides */
 }
 .footer-overlay {
   background: rgba(0, 0, 0, 0.7); /* Dark overlay for transparency */
@@ -1058,7 +1059,7 @@ body {
 
 .about-us-section {
   padding: 50px 20px;
-  background: url("/images/about/about-us-img.PNG") no-repeat center center;
+  background: url("images/about/about-us-img.PNG") no-repeat center center;
   background-size: cover; /* Ensures the image covers the entire section */
   text-align: center;
 }
@@ -1066,14 +1067,11 @@ body {
 
 .about-us-content {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
   gap: 30px;
 }
 
 .about-text {
-  max-width: 600px;
+  max-width: 800px;
   font-family: 'Montserrat';
   color: #333;
   text-align: left;
@@ -1119,4 +1117,246 @@ body {
 
 .schedule-visit-btn:hover {
   background-color: #fdc97d;
+}
+
+/* Base styling for slideshow */
+.mySlides {
+  display: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  height: 500px; /* Default height for large screens */
+  overflow: hidden;
+}
+
+/* Images adjust to the container's height */
+.mySlides {
+  width: 100%;
+  height: 100%; /* Ensure images fill the container */
+  object-fit: cover; /* Crop images proportionally */
+}
+
+/* Overlay content styling */
+.overlay-content {
+  position: absolute;
+  left: 20px; /* Padding from the left */
+  top: 50%; /* Vertically center */
+  transform: translateY(-50%); /* Adjust vertical position */
+  text-align: left; /* Align the text to the left */
+  color: white;
+  z-index: 10; /* Overlay above the image */
+}
+
+/* Slide title styling */
+.overlay-content h2 {
+  font-size: 2rem; /* Responsive font size */
+  margin-bottom: 15px;
+  color: #fff; /* White text color */
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Shadow for readability */
+}
+
+/* Button styling */
+.slide-button {
+  background-color: #fdc97d; /* Button color */
+  border: none;
+  color: #333; /* Text color */
+  padding: 10px 20px; /* Adjust padding */
+  font-size: 1rem; /* Responsive font size */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.slide-button:hover {
+  background-color: #fbaf5d; /* Hover effect */
+  transform: scale(1.05); /* Slight enlarge effect */
+}
+
+/* Font family styling */
+.headerFontFamily {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .slideshow-container {
+    height: 350px; /* Reduced height for tablets */
+  }
+
+  .overlay-content h2 {
+    font-size: 1.5rem; /* Smaller font size for tablets */
+  }
+
+  .slide-button {
+    font-size: 0.9rem; /* Adjust button font size */
+    padding: 8px 16px; /* Adjust padding */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .slideshow-container {
+    height: 250px; /* Further reduced height for phones */
+  }
+
+  .overlay-content {
+    left: 10px; /* Adjust padding */
+  }
+
+  .overlay-content h2 {
+    font-size: 1.2rem; /* Smaller font size for phones */
+  }
+
+  .slide-button {
+    font-size: 0.8rem; /* Smaller button font size */
+    padding: 6px 12px; /* Compact padding */
+  }
+}
+/* General styles for the services section */
+.services-section {
+  background-color: #0F0945;
+  color: #fbaf5d; /* Corrected color */
+  padding: 40px 5%;
+  text-align: center;
+}
+
+.section-title {
+  margin-bottom: 30px;
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #e4b075;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between service boxes */
+  margin-top: 20px;
+}
+
+.service-box {
+  padding: 15px;
+  max-width: 350px; /* Fixed width for larger screens */
+  width: 100%; /* Full width by default for flexibility */
+  opacity: 1; /* Visible by default */
+  transform: translateY(0); /* Default position */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add hover effect */
+}
+
+.service-box h3 {
+  color: #e4b075;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+
+.service-box img {
+  width: 100%; /* Ensure images are responsive */
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 8px; /* Optional: rounded corners */
+}
+
+/* General Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #fff;
+  position: relative;
+  background-color: #0F0945;
+}
+
+.logo img {
+  max-width: 100px;
+}
+
+.horizontal-nav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.horizontal-nav li {
+  margin: 0 15px; /* Add gap between menu items */
+}
+
+.horizontal-nav a {
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.horizontal-nav a:hover {
+  color: #007BFF;
+}
+
+/* Hamburger Menu for Mobile */
+.menu-toggle {
+  color: #fdc97d;
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .horizontal-nav {
+    display: none; /* Hide menu by default on smaller screens */
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #0F0945;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+  }
+
+  .horizontal-nav.open {
+    display: flex; /* Show menu when toggled */
+  }
+
+  .horizontal-nav li {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block; /* Show the hamburger icon */
+  }
+}
+
+@media (min-width: 769px) {
+  .horizontal-nav {
+    display: flex; /* Horizontal layout for larger screens */
+    flex-direction: row;
+    justify-content: flex-start; /* Align menu items from the start */
+  }
+
+  .menu-toggle {
+    display: none; /* Hide hamburger icon on larger screens */
+  }
+
+  .horizontal-nav li {
+    margin: 0 20px; /* More consistent gap between menu items */
+  }
+  .ul{
+    display: flex;
+  }
 }

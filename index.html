@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="icon" type="image/png" sizes="32x32"
@@ -28,23 +29,21 @@
       <div class="logo">
         <img src="images/logo1.png" alt="Logo" />
       </div>
-          <!-- Horizontal Navigation Menu Overlay -->
-        <span id="navMenu" class="horizontal-nav">
+      <!-- Hamburger Menu Icon -->
+      <button id="menuToggle" class="menu-toggle" aria-label="Toggle Navigation">
+        ☰
+      </button>
+      <!-- Horizontal Navigation Menu Overlay -->
+      <nav id="navMenu" class="horizontal-nav">
+        <ul class="ul">
           <li><a href="#home">HOME</a></li>
           <li><a href="/knowMorePage/aboutUs.html">ABOUT US</a></li>
           <li><a href="#services">SERVICES</a></li>
-          <li><a href="knowMorePage/contact.html">CONTACT</a></li>
-        </span>
-        <div class="header-div">
-        <button class="home-button home-margin" onclick="toggleNav()">
-          <img src="images/apartment.png" alt="Home Icon" class="icon" />HOME
-          <!-- <img src="/knowMorePage/assets/images/TanishkOnlyHome.png"alt="Home Icon" class="icon" />HOME -->
-        </button>
-        <button class="home-button" onclick="navigateToPage()">
-          <img src="images/contact.png" alt="Home Icon" class="icon" />Connect With Us
-        </button>
-      </div>
+          <li><a href="knowMorePage/contact.html">CONTACT US</a></li>
+        </ul>
+      </nav>
     </header>
+    
     
 
 
@@ -53,7 +52,7 @@
     <div class="slideshow-container">
       <!-- Slide 1 -->
       <div class="mySlides w3-animate-top">
-        <img src="images/slide1.png" style="width: 100%" />
+        <img src="images/s1.webp" style="width: 100%" />
         <div class="overlay-content">
           <h2 class="headerFontFamily" style="font-weight: 600;">Welcome to Tanishq Property</h2>
           <button class="slide-button">Learn More</button>
@@ -62,7 +61,7 @@
 
       <!-- Slide 2 -->
       <div class="mySlides w3-animate-bottom">
-        <img src="images/slide2.jpeg" style="width: 100%" />
+        <img src="images/s2.webp" style="width: 100%" />
         <div class="overlay-content">
           <h2 class="headerFontFamily" style="font-weight: 600;">Discover Your Dream Home</h2>
           <button class="slide-button headerFontFamily">Explore</button>
@@ -71,7 +70,7 @@
 
       <!-- Slide 3 -->
       <div class="mySlides w3-animate-top">
-        <img src="images/slide3.jfif" style="width: 100%" />
+        <img src="images/s3.jpg" style="width: 100%" />
         <div class="overlay-content">
           <h2 class="headerFontFamily" style="font-weight: 600;">Find the Perfect Place for You</h2>
           <button class="slide-button headerFontFamily">Get Started</button>
@@ -80,7 +79,7 @@
 
       <!-- Slide 4 -->
       <div class="mySlides w3-animate-bottom">
-        <img src="images/slide4.jpg" style="width: 100%" />
+        <img src="images/s4.jpg" style="width: 100%" />
         <div class="overlay-content">
           <h2 class="headerFontFamily" style="font-weight: 600;">Trusted by Many, Loved by All</h2>
           <button class="slide-button headerFontFamily">Join Us</button>
@@ -93,69 +92,67 @@
       <div class="about-us-content">
         <div class="about-text">
           <p class="about-paragraph">
-            Welcome to <strong>Tanishq Property</strong>, your trusted partner in real estate! With a focus on excellence, trust, and customer satisfaction, 
-            we are dedicated to helping you find your dream home or the perfect property investment. Our mission is to deliver unparalleled real estate services, 
-            tailored to meet the needs of every client.
+            Welcome to <strong>Tanishq Property</strong>, your trusted guide to finding the perfect property in one of India’s most dynamic and rapidly developing cities. We are a professional real estate agency with a team of passionate, dedicated experts committed to delivering exceptional results for all your real estate needs. Whether you're looking to buy, sell, rent, or invest in properties, we provide personalized, client-focused services to ensure your journey is seamless, transparent, and ultimately rewarding.
+          </p>
+          <p>
+            <strong>Who We Are</strong>
           </p>
           <p class="about-paragraph">
-            From residential to commercial properties, we provide expert advice, market insights, and end-to-end assistance. Whether you're buying, selling, 
-            or investing, our team of experienced professionals ensures a seamless and hassle-free experience.
+            At Tanishq Property Gurgaon, we believe in the power of relationships and trust. Our strong team of experienced real estate professionals is driven by a shared commitment to offer the highest standards of service. We take the time to understand your needs and offer tailor-made solutions that align with your property goals. From residential homes and luxury apartments to commercial spaces and investment opportunities, we have a vast range of options to cater to every requirement.
           </p>
           <p class="about-paragraph">
-            At Tanishq Property, we believe in creating long-lasting relationships with our clients. Join us on this journey to turn your dreams into reality. 
-            Your trust is our most valued asset.
+            Our team is not just skilled but passionate about real estate. With years of expertise in the Gurgaon market, we are equipped to handle even the most complex real estate transactions, guiding you through every step with confidence
           </p>
+          <p class="about-paragraph">
+            <strong>Our Core Values</strong>
+          </p>
+          <p class="about-paragraph">
+            <strong>Expert Knowledge</strong>: With an in-depth understanding of the Gurgaon property market, our team is well-equipped to provide valuable insights and advice, ensuring you make informed decisions.
+          </p>
+          <p class="about-paragraph">
+            <strong>Integrity and Transparency</strong>: We operate with honesty and transparency at the core of everything we do, ensuring that our clients always feel secure and well-informed throughout the process.
+          </p>
+          <p class="about-paragraph">
+            <strong>Client-Centric Focus</strong>: We prioritize your needs and strive to deliver solutions that not only meet but exceed your expectations.
+          </p>
+          <p class="about-paragraph">
+            <strong>Excellence</strong>: We are committed to maintaining the highest standards in all aspects of our service, from property sourcing to negotiation and documentation
+          </p>
+
           <button class="schedule-visit-btn" onclick="navigateToPage()">Schedule Visit</button>
         </div>
         <div class="about-image">
-          <img src="/images/about/about-inside.jpg" alt="About Us Image" />
+          <img src="images/about/about-main.jfif" alt="About Us Image" />
         </div>
         
       </div>
     </section>
     
     <section class="services-section" id="services">
-      <!-- <h2 class="section-title headerFontFamily headingFonts">WHAT WE ARE DOING</h2> -->
-        <!-- <h2 class="section-title headerFontFamily headingFonts">WHAT WE ARE<span class="headerFontFamily" style="color:#eceff3;"> DOING</span></h2> -->
         <h2 class="section-title headerFontFamily headingFonts">OUR<span class="headerFontFamily" style="color:#eceff3;"> SERVICES</span></h2>
-      <!-- <div class="section-divider" style="margin-bottom: 50px;">
-        <span class="line"></span>
-        <span class="dot">•</span>
-        <span class="line"></span>
-      </div> -->
-      <!-- Divider with line and dot -->
-
       <div class="services-container">
         <div class="service-box animate-left">
           <h3 class="headerFontFamily" style="font-size: 18px; letter-spacing: 3px; text-transform: uppercase;">
-            REAL ESTATE CONSULTING</h3>
+            Buying & Selling</h3>
           <p>
-            For when you need it, Tanishk Property will review, analyze, recommend,
-            For when you need it, Tanishk Property will review, analyze, recommend,
-            For when you need it, Tanishk Property will review, analyze, recommend,
-            and provide solutions...
+            Whether you’re buying your dream home or selling an investment property, we offer expert guidance every step of the way. Our team handles everything from property searches and negotiations to paperwork and closing.
           </p>
           <img src="images/service1.jpg" alt="Real Estate Consulting" />
         </div>
 
         <div class="service-box animate-left">
-          <h3 class="headerFontFamily"  style="font-size: 18px; letter-spacing: 3px; text-transform: uppercase;">NRI SERVICE</h3>
-          <p>
-            In our bid to cater to the demands coming from the NRI community,
-            For when you need it, Tanishk Property will review, analyze, recommend,
-            For when you need it, Tanishk Property will review, analyze, recommend,
-            Tanishk Property...
+          <h3 class="headerFontFamily"  style="font-size: 18px; letter-spacing: 3px; text-transform: uppercase;">Rentals</h3>
+          <p style="white-space: normal; overflow: visible; text-overflow: clip;">
+            We offer a wide range of rental properties to meet your needs. Whether you’re looking for a residential rental or a commercial lease, we have options that suit different budgets and preferences.
           </p>
+          
           <img src="images/service2.jpg" alt="NRI Service" />
         </div>
 
         <div class="service-box animate-left">
-          <h3 class="headerFontFamily"  style="font-size: 18px; letter-spacing: 3px; text-transform: uppercase;">LEGAL CONSULTING</h3>
+          <h3 class="headerFontFamily"  style="font-size: 18px; text-transform: uppercase;">Investment Consultation</h3>
           <p>
-            Tanishk Property assists you in getting your dream home through home
-            For when you need it, Tanishk Property will review, analyze, recommend,
-            For when you need it, Tanishk Property will review, analyze, recommend,
-            loan services...
+            We help you make informed decisions when it comes to property investments. Whether you’re seeking high-growth areas or lucrative commercial spaces, our insights can guide your investments in the right direction.
           </p>
           <img src="images/service3.jpg" alt="Legal Consulting" />
         </div>
@@ -409,10 +406,7 @@
               class="footer-logo"
             />
             <p class="footerText">
-              Tanishk Property was Established in 2007, Tanishk Property Infratech Pvt
-              Ltd is the preferred real estate IPA (Indian Property Associate)
-              of Gurgaon for commercial and residential spaces with the perfect
-              investment opportunity and excellent service.
+              Established in 2008, Tanishq Property is a RERA-registered real estate firm renowned for delivering exceptional services to its clients. Backed by a team of dedicated professionals, we prioritize excellence and customer satisfaction in every transaction. Trusted by leading brands like DLF, Emaar, Birla, and M3M, we specialize in providing tailored solutions in portfolio management, legal assistance, real estate consulting, and loan facilitation, ensuring a seamless and rewarding real estate experience.
             </p>
           </div>
 
@@ -423,10 +417,8 @@
           <div class="social-links">
              <h3 class="headerFontFamily" style="color: #fff; font-size: 20px; letter-spacing: 3px; text-transform: uppercase;">Social Links</h3>
             <ul>
-              <li><a href="#" target="_blank">Facebook</a></li>
-              <li><a href="#" target="_blank">Twitter</a></li>
-              <li><a href="#" target="_blank">Instagram</a></li>
-              <li><a href="#" target="_blank">LinkedIn</a></li>
+              <li><a href="https://www.instagram.com/tanishqpropertyy/profilecard/?igsh=MngyaDhkaGp2c3k1" target="_blank">Instagram</a></li>
+              <li><a href="https://www.linkedin.com/in/tanishq-properties-12252333b/" target="_blank">LinkedIn</a></li>
             </ul>
           </div>
 
@@ -438,10 +430,9 @@
             <h3 class="headerFontFamily" style="color: #fff; font-size: 20px; letter-spacing: 3px; text-transform: uppercase;">Contact Us</h3>
             <p>
              <strong> Tanishk Property Pvt. Ltd.</strong><br />
-              M3M TeePoint, South Block, 6th Floor, Sector 65<br />
-              Gurugram, Haryana 122002
+             C-295 G.F, Opposite Rail Vihar, Sushant Lok III, Sector 57, Gurugram, Haryana 122413
             </p>
-            <p class="contact-infoMarginPaddingB"><strong>Phone:</strong> +91-9876543210</p>
+            <p class="contact-infoMarginPaddingB"><strong>Phone:</strong> +91 96507 70933</p>
             <p class="contact-infoMarginPaddingB"><strong>Email:</strong> Tanishkproperty@gmail.com</p>
             <p class="contact-infoMarginPaddingB">
               <strong>Web:</strong>
