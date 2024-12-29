@@ -214,38 +214,222 @@ properties.forEach((property) => {
 
 // *******************************-------------Customer slider----------*****************************************
 
-const slider = document.getElementById("Cslider");
-const cards = document.querySelectorAll(".Ccard");
-const totalCards = cards.length;
-const visibleCards = 3; // Number of cards visible at a time
-const cardWidth = 100 / visibleCards; // Each card width as a percentage
-let currentIndex = 0;
+// const slider = document.getElementById("Cslider");
+// const cards = document.querySelectorAll(".Ccard");
+// const totalCards = cards.length;
+// const visibleCards = 3; // Number of cards visible at a time
+// const cardWidth = 100 / visibleCards; // Each card width as a percentage
+// let currentIndex = 0;
 
-// Duplicate the cards to create an infinite sliding effect
-for (let i = 0; i < visibleCards; i++) {
-  const clone = cards[i].cloneNode(true);
-  slider.appendChild(clone);
-}
+// // Duplicate the cards to create an infinite sliding effect
+// for (let i = 0; i < visibleCards; i++) {
+//   const clone = cards[i].cloneNode(true);
+//   slider.appendChild(clone);
+// }
 
-const slideCards = () => {
-  currentIndex++;
+// const slideCards = () => {
+//   currentIndex++;
 
-  // Smoothly slide the cards
-  slider.style.transform = `translateX(-${currentIndex * cardWidth}%)`;
-  slider.style.transition = "transform 0.5s ease-in-out";
+//   // Smoothly slide the cards
+//   slider.style.transform = `translateX(-${currentIndex * cardWidth}%)`;
+//   slider.style.transition = "transform 0.5s ease-in-out";
 
-  // Reset to the start seamlessly when reaching the cloned cards
-  if (currentIndex === totalCards) {
-    setTimeout(() => {
-      slider.style.transition = "none";
-      slider.style.transform = `translateX(0)`;
-      currentIndex = 0;
-    }, 500); // Wait for the animation to complete
-  }
-};
+//   // Reset to the start seamlessly when reaching the cloned cards
+//   if (currentIndex === totalCards) {
+//     setTimeout(() => {
+//       slider.style.transition = "none";
+//       slider.style.transform = `translateX(0)`;
+//       currentIndex = 0;
+//     }, 500); // Wait for the animation to complete
+//   }
+// };
 
-// Auto-slide every 3 seconds
-setInterval(slideCards, 4000);
+// // Auto-slide every 3 seconds
+// setInterval(slideCards, 4000);
+
+
+        const slider = document.querySelector('.slider');
+        const cards = document.querySelectorAll(".Scard");
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+        const dotsContainer = document.querySelector('.dots');
+
+        let isDragging = false;
+        let startPosition = 0;
+        let currentTranslate = 0;
+        let previousTranslate = 0;
+        let animationID = null;
+        let currentIndex = 0;
+        let autoPlayInterval;
+        let isTransitioning = false;
+        let cardsPerView = window.innerWidth >= 768 ? 3 : 1;
+
+        // Initialize slider
+        function initializeSlider() {
+            cardsPerView = window.innerWidth >= 768 ? 3 : 1;
+            updateDots();
+            updateActiveStates();
+            setSliderPosition();
+        }
+
+        // Create dots based on sliding pattern
+        function updateDots() {
+            dotsContainer.innerHTML = '';
+            const numDots = cards.length - (cardsPerView - 1);
+            
+            for (let i = 0; i < numDots; i++) {
+                const dot = document.createElement('div');
+                dot.classList.add('dot');
+                dot.addEventListener('click', () => {
+                    if (!isTransitioning) {
+                        goToSlide(i);
+                    }
+                });
+                dotsContainer.appendChild(dot);
+            }
+        }
+
+        function updateActiveStates() {
+            // Update cards
+            cards.forEach((card, index) => {
+                if (cardsPerView === 3) {
+                    // For desktop/tablet: activate current and next two cards
+                    card.classList.toggle('active', 
+                        index >= currentIndex && 
+                        index < currentIndex + cardsPerView);
+                } else {
+                    // For mobile: activate only current card
+                    card.classList.toggle('active', index === currentIndex);
+                }
+            });
+
+            // Update dots
+            document.querySelectorAll('.dot').forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+        }
+
+        function startAutoPlay() {
+            clearInterval(autoPlayInterval);
+            autoPlayInterval = setInterval(() => {
+                if (!isTransitioning) {
+                    moveSlider('next');
+                }
+            }, 2000);
+        }
+
+        function stopAutoPlay() {
+            clearInterval(autoPlayInterval);
+        }
+
+        // Event listeners
+        window.addEventListener('resize', () => {
+            initializeSlider();
+        });
+
+        slider.addEventListener('touchstart', touchStart);
+        slider.addEventListener('touchmove', touchMove);
+        slider.addEventListener('touchend', touchEnd);
+        slider.addEventListener('mousedown', touchStart);
+        slider.addEventListener('mousemove', touchMove);
+        slider.addEventListener('mouseup', touchEnd);
+        slider.addEventListener('mouseleave', touchEnd);
+
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', stopAutoPlay);
+            card.addEventListener('mouseleave', startAutoPlay);
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (!isTransitioning) moveSlider('prev');
+        });
+        nextBtn.addEventListener('click', () => {
+            if (!isTransitioning) moveSlider('next');
+        });
+
+        function touchStart(event) {
+            if (isTransitioning) return;
+            stopAutoPlay();
+            isDragging = true;
+            startPosition = getPositionX(event);
+            slider.classList.add('dragging');
+            animationID = requestAnimationFrame(animation);
+        }
+
+        function touchMove(event) {
+            if (!isDragging) return;
+            const currentPosition = getPositionX(event);
+            currentTranslate = previousTranslate + currentPosition - startPosition;
+        }
+
+        function touchEnd() {
+            if (!isDragging) return;
+            isDragging = false;
+            slider.classList.remove('dragging');
+            cancelAnimationFrame(animationID);
+            
+            const movedBy = currentTranslate - previousTranslate;
+            if (Math.abs(movedBy) > 100) {
+                if (movedBy < 0) {
+                    moveSlider('next');
+                } else {
+                    moveSlider('prev');
+                }
+            } else {
+                setSliderPosition();
+            }
+            startAutoPlay();
+        }
+
+        function getPositionX(event) {
+            return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
+        }
+
+        function animation() {
+            setSliderPosition();
+            if (isDragging) requestAnimationFrame(animation);
+        }
+
+        function setSliderPosition() {
+            const cardWidth = cards[0].offsetWidth + 20; // Including margin
+            currentTranslate = -currentIndex * cardWidth;
+            previousTranslate = currentTranslate;
+            slider.style.transform = `translateX(${currentTranslate}px)`;
+        }
+
+        function goToSlide(index) {
+            if (isTransitioning) return;
+            isTransitioning = true;
+            currentIndex = index;
+            setSliderPosition();
+            updateActiveStates();
+            setTimeout(() => {
+                isTransitioning = false;
+            }, 500);
+        }
+
+        function moveSlider(direction) {
+            if (isTransitioning) return;
+            isTransitioning = true;
+            
+            if (direction === 'next') {
+                currentIndex = (currentIndex + 1) % (cards.length - (cardsPerView - 1));
+            } else {
+                currentIndex = (currentIndex - 1 + (cards.length - (cardsPerView - 1))) % (cards.length - (cardsPerView - 1));
+            }
+            
+            setSliderPosition();
+            updateActiveStates();
+
+            setTimeout(() => {
+                isTransitioning = false;
+            }, 500);
+        }
+
+        // Initialize slider on load
+        initializeSlider();
+        startAutoPlay();
+    
 
 // *******************************-------------Dynamic buttons show cards----------*******************************
 
@@ -294,5 +478,7 @@ document.addEventListener('DOMContentLoaded', () => {
     navMenu.classList.toggle('open');
   });
 });
+
+
 
 
