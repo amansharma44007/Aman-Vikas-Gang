@@ -9156,6 +9156,10 @@ h1.custom {
     width: 100%;
   }
 
+  footer {
+  padding: 15px 15px;
+}
+
 .someInformation{
   display: block;
 }
@@ -9908,10 +9912,10 @@ h1.custom {
     border-color: #fab704 !important;
   }
 
-  .container {
+  /* .container {
     padding-left: 30px;
     padding-right: 30px;
-  }
+  } */
 
   .feature-box-image,
   .pricing-box {
@@ -10433,4 +10437,10 @@ h1.custom {
 .footer-logo {
   width: 150px;
   margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
 }
