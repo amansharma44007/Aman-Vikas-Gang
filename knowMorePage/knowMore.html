@@ -93,6 +93,16 @@
 
         gtag('config', 'AW-16638416690');
     </script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init({
+        publicKey: "72qBg93KE5VUSPASk",
+    });
+    })();
+    </script>
     <style>
         .d-view {
             display: block;
@@ -327,34 +337,22 @@
 
                 <div class="pricelistdiv13" style="display: block; background-size: cover;">
 
-                    <form class="form_inner" id="micro_site_contactForm">
+                    <form class="form_inner" id="ContactQuery" name="ContactQuery">
 
-                        <input type="hidden" value="http://www.tanishkproperty.com/m3m-atrium" name="query_page_url"
-                            id="query_page_url">
 
-                        <input type="hidden" name="query_developer_id" id="query_developer_id" value="11">
+                        <input type="text" id="query_name" name="query_name" class="form-control" placeholder="Name" id="query_name">
 
-                        <input type="hidden" name="query_project_name" id="query_project_name" value="M3M Atrium">
-                        <input type="hidden" name="project_id" id="project_id" value="R1RDblJPbllLc1JnTGQrTDV3TWJKdz09">
-
-                        <input type="hidden" name="query_address" id="query_address" value="Sector 57 Gurgaon">
-
-                        <input type="hidden" name="query_property_type" id="query_property_type"
-                            value="Retail &amp; F&amp;B">
-
-                        <input type="text" name="query_name" class="form-control" placeholder="Name" id="query_name">
-
-                        <input type="email" name="query_email" class="form-control" placeholder="Email"
+                        <input type="email" id="query_email" name="query_email" class="form-control" placeholder="Email"
                             id="query_email">
 
-                        <input type="text" name="query_phone" class="form-control" placeholder="Mobile No."
+                        <input type="text" id="query_phone" name="query_phone" class="form-control" placeholder="Mobile No."
                             id="query_phone">
 
-                        <input type="text" name="query_msg" class="form-control" placeholder="Comments.."
+                        <input type="text" id="query_msg" name="query_msg" class="form-control" placeholder="Comments.."
                             id="query_msg">
 
                         <input type="submit" name="cnctSubmit" class="btn btn btn-warning btn-block" value="Submit"
-                            id="cnctSubmit">
+                            id="ContactQuery">
 
 
                     </form>
@@ -1090,84 +1088,6 @@
                     </div>
                 </div>
             </section>
-
-
-            <!-- section close -->
-
-            <section class="btmformdiv text-center" id="section-testimonial" style="background-size: cover;">
-
-                <div class="container" style="background-size: cover;">
-
-                    <div class="row" style="background-size: cover;">
-
-                        <div class="col-md-6 offset-md-3 text-center wow fadeInUp"
-                            style="visibility: hidden; animation-name: none; background-size: cover;">
-
-                            <h2 class="custom headingFontAndFamily"><span class="varColor">GET IN TOUCH</span> WITH US
-                            </h2>
-
-                            <!-- <div class="separator" style="background-size: cover;"><span><i  class="fa fa-circle"></i></span></div> -->
-
-                            <div class="spacer-single" style="background-size: cover;"></div>
-
-                        </div>
-
-                    </div>
-                    <div class="container newDiv">
-                        <div class="row" style="background-size: cover;">
-
-                            <div class="col-12" style="background-size: cover;">
-
-                                <form action="" id="touchwithusform">
-
-                                    <div class="row" style="background-size: cover;">
-
-                                        <input type="hidden" value="http://www.tanishkproperty.com/m3m-atrium"
-                                            name="getpageurl" id="getpageurl">
-
-                                        <input type="hidden" name="getdeveloperid" id="getdeveloperid" value="11">
-
-
-                                        <input type="hidden" name="project_id" id="project_id"
-                                            value="R1RDblJPbllLc1JnTGQrTDV3TWJKdz09">
-
-                                        <input type="hidden" name="getprojectname" id="getprojectname"
-                                            value="M3M Atrium">
-
-                                        <input type="hidden" name="getaddress" id="getaddress"
-                                            value="Sector 57 Gurgaon">
-
-                                        <input type="hidden" name="gettypeid" id="gettypeid"
-                                            value="Retail &amp; F&amp;B">
-
-                                        <div class="col-md-4 frmdibv" style="background-size: cover;">
-                                            <input name="getname" type="text" class="form-control btmfrm"
-                                                placeholder="Enter Your Name" id="getname">
-                                        </div>
-                                        <div class="col-md-4 frmdibv" style="background-size: cover;">
-                                            <input type="text" name="getphone" class="form-control btmfrm"
-                                                placeholder="Mobile Number" id="getphone">
-                                        </div>
-                                        <div class="col-md-4 frmdibv" style="background-size: cover;">
-                                            <input type="text" name="getemail" class="form-control btmfrm"
-                                                placeholder="Email Id" id="getemail">
-                                        </div>
-                                        <div class="col-md-12  frmdibv" style="background-size: cover;">
-                                            <input type="text" name="getcomment" class="form-control btmfrm"
-                                                placeholder="Message" id="getcomment">
-                                        </div>
-                                        <div class="col-md-12 frmdibv" style="background-size: cover;">
-                                            <input type="submit" class="btmsbmt" value="SUBMIT">
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-
 
             <section id="similarProject" class="text-light latest-property similar-project "
                 style="background-size: cover; ">
@@ -2939,6 +2859,28 @@
 
 
         }
+    </script>
+    <script>
+        (function() {
+            emailjs.init("72qBg93KE5VUSPASk"); // Replace with your EmailJS Public Key
+        })();
+    
+        document.getElementById("ContactQuery").addEventListener("submit", function(event) {
+            event.preventDefault();
+    
+            emailjs.send("service_5veuxcg","template_exjwylf", {
+                name: document.getElementById("query_name").value,
+                email: document.getElementById("query_email").value,
+                phone: document.getElementById("query_phone").value,
+                msg: document.getElementById("query_msg").value
+            })
+            .then(function(response) {
+                alert("Message sent successfully!");
+                document.getElementById("ContactQuery").reset();
+            }, function(error) {
+                alert("Failed to send message. Please try again.");
+            });
+        });
     </script>
 </body>
 

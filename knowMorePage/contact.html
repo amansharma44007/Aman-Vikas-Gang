@@ -99,7 +99,17 @@
 
         gtag("config", "AW-16638416690");
     </script>
-
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init({
+        publicKey: "72qBg93KE5VUSPASk",
+    });
+    })();
+    </script>
+    <script src="email.js"></script>
     <title>Contact us | Tanishk Property</title>
 
     <meta name="description"
@@ -297,17 +307,6 @@
                             </div>
 
                             <br /><br />
-
-                            <div class="newsletter-form" style="background-size: cover">
-                                <h3>SUBSCRIBE TO NEWSLETTER</h3>
-
-                                <form class="AddNewsletter">
-                                    <input type="email" name="emailnews" id="emailnews"
-                                        placeholder="Enter Your Email Address" required="" class="frm" />
-
-                                    <input type="submit" value="Subscribe" class="btn" />
-                                </form>
-                            </div>
                         </div>
                         <div class="col-md-6 wow fadeInRight animated" style="
                                         visibility: visible;
@@ -377,7 +376,7 @@
                                 </div>
 
                                 <input type="submit" id="formSubmit" class="btn btn-warning" value="SUBMIT"
-                                    id="ContactQuery" onclick="submit()" />
+                                    id="ContactQuery"/>
                             </form>
                         </div>
                     </div>
@@ -393,9 +392,8 @@
             <div class="row" style="background-size: cover">
                 <div class="col-12" style="background-size: cover">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5941.9178836912315!2d75.80209387450266!3d26.85302576265484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5d0abb464cf%3A0x43440aa416c9fdaf!2sWorld%20Trade%20Park!5e1!3m2!1sen!2sus!4v1732378303241!5m2!1sen!2sus"
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3508.8689155794104!2d77.07468807549317!3d28.423211975779697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDI1JzIzLjYiTiA3N8KwMDQnMzguMiJF!5e0!3m2!1sen!2sin!4v1738992443631!5m2!1sen!2sin"
                         width="100%" frameborder="0" style="border: 0" allowfullscreen=""></iframe>
-
                     <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23841.441366199244!2d76.99354292379181!3d26.49962752841324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397186118a639c4f%3A0x3a0ba357a60ac421!2sKarauli%2C%20Rajasthan%2C%20India!5e1!3m2!1sen!2sus!4v1732378050991!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
 
                     <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5941.9178836912315!2d75.80209387450266!3d26.85302576265484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5d0abb464cf%3A0x43440aa416c9fdaf!2sWorld%20Trade%20Park!5e1!3m2!1sen!2sus!4v1732378303241!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
@@ -1004,5 +1002,27 @@ Yes | I am interested</textarea>
     <script src="/knowMorePage/js/script.js"></script>
 </body>
 <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+<script>
+    (function() {
+        emailjs.init("72qBg93KE5VUSPASk"); // Replace with your EmailJS Public Key
+    })();
+
+    document.getElementById("ContactQuery").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        emailjs.send("service_5veuxcg","template_exjwylf", {
+            name: document.getElementById("query_name").value,
+            email: document.getElementById("query_email").value,
+            phone: document.getElementById("query_phone").value,
+            msg: document.getElementById("query_msg").value
+        })
+        .then(function(response) {
+            alert("Message sent successfully!");
+            document.getElementById("ContactQuery").reset();
+        }, function(error) {
+            alert("Failed to send message. Please try again.");
+        });
+    });
+</script>
 
 </html>
