@@ -48,73 +48,181 @@ document.addEventListener("DOMContentLoaded", () => {
 // Sample properties data for dynamic cards
 const properties = [
   {
+    image: "images/images/m3mfullimg.jpg",
+    image2: "images/images/m3m.png",
+    name: "TEStt",
+     type: "Commercial",
+    location:
+      "M3M International Financial Center, Sector-66, Golf Course Road (Extn.), Gurugram-122101, Haryana, India",
+    // price: "On Request",
+    link: "/knowMorePage/knowMore.html",
+  },
+  {
     // image: "https://via.placeholder.com/400x180", // Replace with actual image URLs
-    image: "images/service2.jpg", // Replace with actual image URLs
-    image2: "images/willdelete.png", // Replace with actual image URLs
-    name: "M3M CAPITAL",
-    type: "Commercial",
-    location: "Sector 113 , On Main Dwarka Expressway",
-    price: "₹ 2.94 Cr*",
+    image: "images/images/Signature Global.jpg", // Replace with actual image URLs
+    image2: "images/images/sglogo.svg", // Replace with actual image URLs
+    name: "SIGNATURE GLOBAL",
+     type: "Commercial",
+    // location: "Sector 113 , On Main Dwarka Expressway",
+    location:
+      "Unit No.101, Ground Floor, Tower-A, Signature Tower South City-1, Gurugram, Haryana",
+    // price: "₹ 2.94 Cr*",
+    link: "/knowMorePage/signatureglobal.html",
   },
   {
-    image: "https://via.placeholder.com/400x180", // Replace with actual image URLs
-    image2: "images/willdelete1.png", // Replace with actual image URLs
-    name: "SMART WORLD ORCHARD",
-    type: "Commercial",
-    location: "Sector-61, Gurgaon",
-    price: "₹ 1.52 Cr*",
+    image: "images/images/The edition fullimg.jpg",
+    image2: "images/images/The edition.jpg",
+    name: "SMART WORLD THE EDITION",
+     type: "Commercial",
+    location: "Badshahpur, Sector 66, Gurugram, Haryana",
+    // price: "₹ 1.52 Cr*",
+    link: "/knowMorePage/smartWorldTheEdition.html",
   },
   {
-    image: "https://via.placeholder.com/400x180", // Replace with actual image URLs
-    image2: "images/willdelete2.png", // Replace with actual image URLs
-    name: "Smart World One DXP",
-    type: "Commercial",
-    location: "On Dwarka Expressway",
-    price: "On Request",
+    image: "images/images/Eldeco fullimg.jpg",
+    image2: "images/images/Eldeco.jpg",
+    name: "ELDECO",
+     type: "Commercial",
+    location: "Eldeco, Sector 80, Gurugram, Haryana",
+    // price: "₹ 1.45 Cr*",
+    link: "/knowMorePage/eldeco.html",
   },
   {
-    image: "https://via.placeholder.com/400x180", // Replace with actual image URLs
-    image2: "images/willdelete3.png", // Replace with actual image URLs
-    name: "DLF Gardencity Enclave",
-    type: "Commercial",
-    location: "Sector 93, Gurugram",
-    price: "₹ 1.45 Cr*",
+    image: "images/images/m3mfullimg.jpg",
+    image2: "images/images/m3m.png",
+    name: "M3M India Pvt. Ltd.",
+     type: "Commercial",
+    location:
+      "M3M International Financial Center, Sector-66, Golf Course Road (Extn.), Gurugram-122101, Haryana, India",
+    // price: "On Request",
+    link: "/knowMorePage/m3mIndia.html",
+  },
+  {
+    image: "images/images/tulipfullimg.avif",
+    image2: "images/images/Tulip2.jpg",
+    name: "TULIP CRIMSON",
+     type: "Commercial",
+    location: "Tulip Crimson, Sector 70 Gurugram, Haryana",
+    // price: "On Request",
+    link: "/knowMorePage/tulipCrimson.html",
+  },
+  {
+    image: "images/images/paras_fullimg.jpg",
+    image2: "images/images/PARAS.svg",
+    name: "PARAS BUILDTECH",
+     type: "Commercial",
+    location:
+      "11th Floor, TOWER-B, Paras Twin Towers, Golf Course Rd, Suncity, Sector 54, Gurugram, Haryana",
+    // price: "On Request",
+    link: "/knowMorePage/parasBuildtech.html",
+  },
+  {
+    image: "images/images/godrej_fullimg.jpg",
+    image2: "images/images/godrej.jpg",
+    name: "GODREJ PROPERTIES",
+     type: "Commercial",
+    location: "Sector 43, Golf Course Road, Gurugram",
+    // price: "On Request",
+    link: "/knowMorePage/godrejProperties.html",
+  },
+  {
+    image: "images/images/twin_tower_fullimg.png",
+    image2: "images/images/twin_tower.png",
+    name: "SIGNATURE GLOBAL TWIN TOWER DXP",
+     type: "Commercial",
+    location: "Sector 84, Gurugram",
+    // price: "On Request",
+    link: "/knowMorePage/signatureGlobalTwinTower.html",
   },
 ];
 
 const residential = [
   {
-    image: "https://via.placeholder.com/400x180", // Replace with actual image URLs
-    image2: "images/willdelete1.png", // Replace with actual image URLs
-    name: "SMART WORLD ORCHARD",
+    image: "images/images/m3mfullimg.jpg",
+    image2: "images/images/m3m.png",
+    name: "TEStt",
     type: "Residential",
-    location: "Sector-61, Gurgaon",
-    price: "₹ 1.52 Cr*",
+    location:
+      "M3M International Financial Center, Sector-66, Golf Course Road (Extn.), Gurugram-122101, Haryana, India",
+    // price: "On Request",
+    link: "/knowMorePage/knowMore.html",
   },
   {
     // image: "https://via.placeholder.com/400x180", // Replace with actual image URLs
-    image: "images/service2.jpg", // Replace with actual image URLs
-    image2: "images/willdelete.png", // Replace with actual image URLs
-    name: "M3M CAPITAL",
+    image: "images/images/Signature Global.jpg", // Replace with actual image URLs
+    image2: "images/images/sglogo.svg", // Replace with actual image URLs
+    name: "SIGNATURE GLOBAL",
     type: "Residential",
-    location: "Sector 113 , On Main Dwarka Expressway",
-    price: "₹ 2.94 Cr*",
+    // location: "Sector 113 , On Main Dwarka Expressway",
+    location:
+      "Unit No.101, Ground Floor, Tower-A, Signature Tower South City-1, Gurugram, Haryana",
+    // price: "₹ 2.94 Cr*",
+    link: "/knowMorePage/signatureglobal.html",
   },
   {
-    image: "https://via.placeholder.com/400x180", // Replace with actual image URLs
-    image2: "images/willdelete3.png", // Replace with actual image URLs
-    name: "DLF Gardencity Enclave",
+    image: "images/images/The edition fullimg.jpg",
+    image2: "images/images/The edition.jpg",
+    name: "SMART WORLD THE EDITION",
     type: "Residential",
-    location: "Sector 93, Gurugram",
-    price: "₹ 1.45 Cr*",
+    location: "Badshahpur, Sector 66, Gurugram, Haryana",
+    // price: "₹ 1.52 Cr*",
+    link: "/knowMorePage/smartWorldTheEdition.html",
   },
   {
-    image: "https://via.placeholder.com/400x180", // Replace with actual image URLs
-    image2: "images/willdelete2.png", // Replace with actual image URLs
-    name: "Smart World One DXP",
+    image: "images/images/Eldeco fullimg.jpg",
+    image2: "images/images/Eldeco.jpg",
+    name: "ELDECO",
     type: "Residential",
-    location: "On Dwarka Expressway",
-    price: "On Request",
+    location: "Eldeco, Sector 80, Gurugram, Haryana",
+    // price: "₹ 1.45 Cr*",
+    link: "/knowMorePage/eldeco.html",
+  },
+  {
+    image: "images/images/m3mfullimg.jpg",
+    image2: "images/images/m3m.png",
+    name: "M3M India Pvt. Ltd.",
+    type: "Residential",
+    location:
+      "M3M International Financial Center, Sector-66, Golf Course Road (Extn.), Gurugram-122101, Haryana, India",
+    // price: "On Request",
+    link: "/knowMorePage/m3mIndia.html",
+  },
+  {
+    image: "images/images/tulipfullimg.avif",
+    image2: "images/images/Tulip2.jpg",
+    name: "TULIP CRIMSON",
+    type: "Residential",
+    location: "Tulip Crimson, Sector 70 Gurugram, Haryana",
+    // price: "On Request",
+    link: "/knowMorePage/tulipCrimson.html",
+  },
+  {
+    image: "images/images/paras_fullimg.jpg",
+    image2: "images/images/PARAS.svg",
+    name: "PARAS BUILDTECH",
+    type: "Residential",
+    location:
+      "11th Floor, TOWER-B, Paras Twin Towers, Golf Course Rd, Suncity, Sector 54, Gurugram, Haryana",
+    // price: "On Request",
+    link: "/knowMorePage/parasBuildtech.html",
+  },
+  {
+    image: "images/images/godrej_fullimg.jpg",
+    image2: "images/images/godrej.jpg",
+    name: "GODREJ PROPERTIES",
+    type: "Residential",
+    location: "Sector 43, Golf Course Road, Gurugram",
+    // price: "On Request",
+    link: "/knowMorePage/godrejProperties.html",
+  },
+  {
+    image: "images/images/twin_tower_fullimg.png",
+    image2: "images/images/twin_tower.png",
+    name: "SIGNATURE GLOBAL TWIN TOWER DXP",
+    type: "Residential",
+    location: "Sector 84, Gurugram",
+    // price: "On Request",
+    link: "/knowMorePage/signatureGlobalTwinTower.html",
   },
 ];
 
@@ -192,7 +300,7 @@ function createCard(property) {
   const a = document.createElement("a");
   //   button.classList.add("a");
   //a.href = "/Property-main/knowMorePage/knowMore.html";
-  a.href="/knowMorePage/knowMore.html" 
+  a.href = property.link;
   a.target = "_black";
   a.textContent = "Know More";
 
@@ -207,7 +315,7 @@ function createCard(property) {
 
 // Populate the cards in the card container
 const cardContainer = document.getElementById("cardContainer");
-properties.forEach((property) => {
+residential.forEach((property) => {
   const card = createCard(property);
   cardContainer.appendChild(card);
 });
@@ -481,4 +589,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+const picframeElements = document.querySelectorAll('.picframe');  
+const overlayElements = document.querySelectorAll('.overlay'); 
 
+function updateOverlayWidth() {
+  picframeElements.forEach((picframeElement, index) => {
+    const overlayElement = overlayElements[index];
+    const picframeWidth = picframeElement.offsetWidth;
+    overlayElement.style.width = `${picframeWidth}px`;
+    console.log(`Updated width of overlay at index ${index}: ${picframeWidth}px`);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  updateOverlayWidth();
+});
+window.addEventListener('resize', updateOverlayWidth);
+overlayElements.forEach(overlayElement => {
+  overlayElement.addEventListener('mouseover', function() {
+    overlayElement.style.opacity = 0.9;
+  });
+
+  overlayElement.addEventListener('mouseout', function() {
+    overlayElement.style.opacity = 0;
+  });
+});

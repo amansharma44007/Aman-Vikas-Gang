@@ -456,7 +456,8 @@ body {
   text-align: justify; /* Aligns text perfectly on both sides */
 }
 .footer-overlay {
-  background: rgba(0, 0, 0, 0.7); /* Dark overlay for transparency */
+  /* background: rgba(0, 0, 0, 0.7); Dark overlay for transparency */
+  background: #120a5d;
   padding: 40px 20px;
 }
 
@@ -582,7 +583,8 @@ body {
 
 /* Copyright Footer */
 .copyright-footer {
-  background-color: #111; /* Dark background */
+  background-color: #120a5d;
+  /* background-color: #111; Dark background */
   color: #ccc; /* Light text color */
   text-align: center;
   padding: 10px 20px;
@@ -1182,6 +1184,17 @@ body {
 }
 
 /* Responsive adjustments */
+/* @media screen and (min-width: 1024px) {
+  .overlay {
+  width: 260px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .overlay {
+  width: 313.67px;
+  }
+} */
+
 @media screen and (max-width: 768px) {
   .slideshow-container {
     height: 350px; /* Reduced height for tablets */
@@ -1195,6 +1208,9 @@ body {
     font-size: 0.9rem; /* Adjust button font size */
     padding: 8px 16px; /* Adjust padding */
   }
+  /* .overlay {
+  width: 352.67px;
+  } */
 }
 
 @media screen and (max-width: 480px) {
