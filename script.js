@@ -46,12 +46,12 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Sample properties data for dynamic cards
-const properties = [
+const residential = [
   {
     image: "images/images/m3mfullimg.jpg",
     image2: "images/images/m3m.png",
     name: "TEStt",
-     type: "Commercial",
+    type: "Commercial",
     location:
       "M3M International Financial Center, Sector-66, Golf Course Road (Extn.), Gurugram-122101, Haryana, India",
     // price: "On Request",
@@ -62,7 +62,7 @@ const properties = [
     image: "images/images/Signature Global.jpg", // Replace with actual image URLs
     image2: "images/images/sglogo.svg", // Replace with actual image URLs
     name: "SIGNATURE GLOBAL",
-     type: "Commercial",
+    type: "Commercial",
     // location: "Sector 113 , On Main Dwarka Expressway",
     location:
       "Unit No.101, Ground Floor, Tower-A, Signature Tower South City-1, Gurugram, Haryana",
@@ -73,7 +73,7 @@ const properties = [
     image: "images/images/The edition fullimg.jpg",
     image2: "images/images/The edition.jpg",
     name: "SMART WORLD THE EDITION",
-     type: "Commercial",
+    type: "Commercial",
     location: "Badshahpur, Sector 66, Gurugram, Haryana",
     // price: "₹ 1.52 Cr*",
     link: "/knowMorePage/smartWorldTheEdition.html",
@@ -82,7 +82,7 @@ const properties = [
     image: "images/images/Eldeco fullimg.jpg",
     image2: "images/images/Eldeco.jpg",
     name: "ELDECO",
-     type: "Commercial",
+    type: "Commercial",
     location: "Eldeco, Sector 80, Gurugram, Haryana",
     // price: "₹ 1.45 Cr*",
     link: "/knowMorePage/eldeco.html",
@@ -91,7 +91,7 @@ const properties = [
     image: "images/images/m3mfullimg.jpg",
     image2: "images/images/m3m.png",
     name: "M3M India Pvt. Ltd.",
-     type: "Commercial",
+    type: "Commercial",
     location:
       "M3M International Financial Center, Sector-66, Golf Course Road (Extn.), Gurugram-122101, Haryana, India",
     // price: "On Request",
@@ -101,7 +101,7 @@ const properties = [
     image: "images/images/tulipfullimg.avif",
     image2: "images/images/Tulip2.jpg",
     name: "TULIP CRIMSON",
-     type: "Commercial",
+    type: "Commercial",
     location: "Tulip Crimson, Sector 70 Gurugram, Haryana",
     // price: "On Request",
     link: "/knowMorePage/tulipCrimson.html",
@@ -110,7 +110,7 @@ const properties = [
     image: "images/images/paras_fullimg.jpg",
     image2: "images/images/PARAS.svg",
     name: "PARAS BUILDTECH",
-     type: "Commercial",
+    type: "Commercial",
     location:
       "11th Floor, TOWER-B, Paras Twin Towers, Golf Course Rd, Suncity, Sector 54, Gurugram, Haryana",
     // price: "On Request",
@@ -120,7 +120,7 @@ const properties = [
     image: "images/images/godrej_fullimg.jpg",
     image2: "images/images/godrej.jpg",
     name: "GODREJ PROPERTIES",
-     type: "Commercial",
+    type: "Commercial",
     location: "Sector 43, Golf Course Road, Gurugram",
     // price: "On Request",
     link: "/knowMorePage/godrejProperties.html",
@@ -129,14 +129,14 @@ const properties = [
     image: "images/images/twin_tower_fullimg.png",
     image2: "images/images/twin_tower.png",
     name: "SIGNATURE GLOBAL TWIN TOWER DXP",
-     type: "Commercial",
+    type: "Commercial",
     location: "Sector 84, Gurugram",
     // price: "On Request",
     link: "/knowMorePage/signatureGlobalTwinTower.html",
   },
 ];
 
-const residential = [
+const properties = [
   {
     image: "images/images/m3mfullimg.jpg",
     image2: "images/images/m3m.png",
