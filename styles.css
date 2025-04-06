@@ -1313,7 +1313,7 @@ body {
 
 .horizontal-nav a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 15px;
   transition: color 0.3s ease;
 }
 
@@ -1371,7 +1371,7 @@ body {
   }
 
   .horizontal-nav li {
-    margin: 0 20px; /* More consistent gap between menu items */
+    margin: 0 5px; /* More consistent gap between menu items */
   }
   .ul{
     display: flex;

@@ -30,6 +30,31 @@ function toggleNav() {
   }
 }
 
+ function updateMenuVisibility() {
+   var menuBtn = document.getElementById("menu-btn");
+   var navMenuHeader = document.getElementById("menu-header-btn");
+   var mainMenu = document.getElementById("mainmenu");
+
+   if (window.innerWidth < 995) {
+     // Remove visibility:hidden style when the width is less than 769px
+  menuBtn.classList.toggle("/*clicked*/"); // Toggle the "show" class
+  navMenuHeader.classList.toggle("/*height-auto*/"); // Toggle the "show" class
+  mainMenu.classList.toggle("/*menu-show*/");
+  document.getElementById("mainmenu").style.display = "none";
+     menuBtn.style.visibility = "visible";
+   } else {
+     // Optionally, you can restore it to hidden if the width is larger than 768px
+     menuBtn.style.visibility = "hidden";
+   }
+ }
+
+ // Run the function initially
+ updateMenuVisibility();
+
+ // Add an event listener to handle window resizing
+ window.addEventListener("resize", updateMenuVisibility);
+
+
 // ------------------------SEND EMAIL----------------------------------------
 
 //  document
