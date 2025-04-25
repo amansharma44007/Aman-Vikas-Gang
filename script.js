@@ -258,10 +258,10 @@ function createCard(property) {
   const cardContent = document.createElement("div");
   cardContent.classList.add("card-content");
 
-  const imageCenter = document.createElement("img");
-  imageCenter.src = property.image2;
-  imageCenter.alt = property.name;
-  cardContent.appendChild(imageCenter);
+  // const imageCenter = document.createElement("img");
+  // imageCenter.src = property.image2;
+  // imageCenter.alt = property.name;
+  // cardContent.appendChild(imageCenter);
 
   const titleRow = document.createElement("div");
   titleRow.classList.add("card-titleRow");
